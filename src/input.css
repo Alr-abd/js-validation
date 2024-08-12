@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    background-color: rgb(51, 49, 49);
+}
+
+.input {
+    border: 1px solid gray;
+    background-color: rgb(207, 204, 201);
+    border-radius: 5px;
+    height: 40px;
+    padding-right: 10px;
+    max-width: 207px;
+}
+
+input:focus {
+    outline: none;
+    background-color: rgba(207, 204, 201, 0.75);
+
+
+}
+
+.label {
+    padding-right: 5px;
+}
+
+input::placeholder {
+    color: rgb(93, 93, 91);
+}
+
+.warn{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.warn--show{
+    visibility: unset;
+    opacity: 1;
+}
+.invalid {
+
+    color: rgb(245, 153, 153);
+}
+
+.invalid::before{
+    padding-left: 5px;
+    left: -35px;
+    content: "✖";
+}
+
+.valid {
+
+    color: rgb(116, 233, 128);
+}
+
+.valid::before {
+    padding-left: 5px;
+    left: -35px;
+    content: "✔";
+}
+
+.subform {
+    border: 1px solid rgb(235, 233, 229);
+    border-radius: 10px;
+}
+.subform:focus {
+    background-color:  rgba(235, 233, 229, 0.5) ;
+}
+
+.invalidpass{
+    color: rgb(245, 153, 153);
+}
+
+.invalidpass::before{
+    padding-left: 5px;
+    left: -35px;
+    content: "✖";
+}
+
+.validpass {
+    color: rgb(116, 233, 128);
+}
+.validpass::before{
+    padding-left: 5px;
+    left: -35px;
+    content: "✔";
+}
+
+.texttel {
+    color: rgb(245, 153, 153);
+}
+
+.textgmail {
+    font-size: 15px;
+}
+
+.passtext {
+    font-size: 15px;
+}
+
+
